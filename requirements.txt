@@ -1,0 +1,3 @@
+# Railpack solo analiza la raiz del proyecto, por eso reenviamos la instalacion
+# al requirements real que vive dentro de backend/.
+-r backend/requirements.txt
