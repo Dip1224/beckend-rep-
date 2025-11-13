@@ -1,0 +1,22 @@
+{
+  "2025-11-12": {
+    "diego": [
+      {
+        "tipo": "entrada",
+        "hora": "17:01:06"
+      },
+      {
+        "tipo": "salida",
+        "hora": "17:01:17"
+      },
+      {
+        "tipo": "entrada",
+        "hora": "17:01:36"
+      },
+      {
+        "tipo": "salida",
+        "hora": "17:01:48"
+      }
+    ]
+  }
+}

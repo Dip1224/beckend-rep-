@@ -1,0 +1,28 @@
+﻿# ============================================================================
+# SISTEMA DE ASISTENCIA FACIAL - DEPENDENCIAS BACKEND
+# ============================================================================
+
+# Framework web
+flask==3.0.0
+flask-cors==4.0.0
+
+# Reconocimiento facial (núcleo)
+insightface==0.7.3
+onnxruntime==1.20.1
+onnx==1.15.0
+
+# Procesamiento de imágenes
+opencv-python-headless==4.10.0.84
+numpy>=1.24.0,<2.0.0
+
+# Utilidades
+Pillow==10.4.0
+python-dotenv==1.0.1
+
+# Integraciones externas
+supabase==2.4.0
+httpx==0.25.2
+gotrue==2.9.1
+
+# Servidor de producción
+gunicorn==21.2.0

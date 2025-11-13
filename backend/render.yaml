@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: insightface-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --timeout 120 api.server:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      # Supabase deshabilitado temporalmente por compatibilidad
+      # - key: SUPABASE_URL
+      #   sync: false
+      # - key: SUPABASE_SERVICE_ROLE_KEY
+      #   sync: false
+      # - key: SUPABASE_ANON_KEY
+      #   sync: false
+      # - key: SUPABASE_STORAGE_BUCKET
+      #   value: rostros
+      # - key: SUPABASE_STORAGE_FOLDER
+      #   value: personas
